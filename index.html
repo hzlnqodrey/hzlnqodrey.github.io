@@ -75,7 +75,7 @@
                                 <div class="form-group row">
                                     <label for="RAM" class="col-sm-3 col-form-label not-bold">RAM:</label>
                                     <div class="col-sm-7">
-                                      <input type="text" class="form-control" id="RAM" placeholder="RAM">
+                                      <input type="text" class="form-control" id="RAM" placeholder="RAM" onkeydown="return /[0-9]/i.test(event.key)">
                                     </div>
                                     <div class="col-sm-2">
                                         <input type="text" class="form-control" id="RAM" placeholder="GB" readonly>
@@ -134,6 +134,7 @@
                         <li><span>Platform and Device Environment</span>
                             <p class="tipe-data">Data Type: <strong>String,</strong> except <strong>RAM. RAM is number/integer</strong></p>
                             <p>Pada field Platform and Device Environment, ada 3 field bertipe Text yaitu <strong>Phone Brand</strong>, <strong>RAM</strong>, dan <strong>Android Version</strong></p>
+                            <p>Untuk <strong>RAM</strong> batasin user dari menulis <em>Aplhanumeric (e.g: a-z / A-Z)</em>, jadi hanya bisa fill <em> number (e.g: 0-9)</em> </p>
                             <p>Kirim valuenya ke Backend</p>
                         </li>
                         <li><span>Attach files, videos or images (Optional, tidak wajib diisi oleh user)</span>
