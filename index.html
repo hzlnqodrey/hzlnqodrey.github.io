@@ -11,6 +11,9 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="style/index.css">
 
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <title>Hello, world!</title>
   </head>
   <body>
@@ -29,7 +32,7 @@
                 <div class="content mt-2">
                     <form action="">
                         <div class="form-group mt-2">
-                            <h2>Identitas</h2>
+                            <a href="#identitas"><h2 class="identitas">Identitas <span class="material-symbols-outlined">link</span></h2></a>
                             <div class="form-group mt-3">
                                 <label for=''>Nama*</label>
                                 <input class="form-control" type='text' name='' id='' placeholder="Nama" required>
@@ -40,7 +43,7 @@
                             </div>
                         </div>
                         <div class="form-group mt-5">
-                            <h2>Keterangan</h2>
+                            <a href="#keterangan"><h2>Keterangan <span class="material-symbols-outlined">link</span></h2></a>
                             <div class="form-group mt-3">
                                 <label for='laporan'>Laporan*</label>
                                 <input class="form-control" type='text' name='laporan' id='laporan' placeholder="Laporan" required>
@@ -83,20 +86,34 @@
 
             <div class="explanation">
                 <h1><center>Dokumentasi</center></h1>
-                <ol type="1">
-                    <li><span>Nama</span>
-                        <p>Already Implemented</p>
-                    </li>
-                    <li><span>Surel</span>
-                        <p>Already Implemented</p>
-                    </li>
-                    <li><span>Laporan</span>
-                        <p>Already Implemented</p>
-                    </li>
-                    <li><span>Keparahan</span></li>
-                    <li><span>Platform dan Lingkungan Perangkat</span></li>
-                    <li><span>Screenshoot</span></li>
-                </ol>
+                <div class="explanation-identitas mt-5" id="identitas">
+                    <h2>Identitas</h2>
+                    <ol type="1">
+                        <li><span>Nama</span>
+                            <p>Already Implemented</p>
+                        </li>
+                        <li><span>Surel</span>
+                            <p>Already Implemented</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="explanation-keterangan mt-5" id="keterangan">
+                    <h2>Keterangan</h2>
+                    <ol type="1">
+                        <li><span>Laporan</span>
+                            <p>Already Implemented</p>
+                        </li>
+                        <li><span>Keparahan</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quasi!</p>
+                        </li>
+                        <li><span>Platform dan Lingkungan Perangkat</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga!</p>
+                        </li>
+                        <li><span>Screenshoot</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga!</p>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
     </main>

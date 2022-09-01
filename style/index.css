@@ -58,25 +58,37 @@ main .container .wrapper .content {
     padding: 5%;
 }
 
+a {
+    color: inherit
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 10,
+  'wght' 500,
+  'GRAD' -25,
+  'opsz' 40
+}
+
 main .container .wrapper .content form section.button-form p {
     color: red;
 }
 
 main .explanation {
     padding: 5%;
-    border: 1px solid red;
 }
 
 main .explanation ol li::marker {
-    font-size: 2.3em;
+    font-size: 1.5em;
 }
 
 main .explanation ol li span {
     font-family: Inter-semi-bold;
-    font-size: 2.3em;
+    font-size: 2em;
 }
 
 main .explanation ol li p {
     font-family: Inter-regular;
     font-size: 1.5em;
 }
+
