@@ -82,6 +82,12 @@ main .container .wrapper .content form .form-group .not-bold {
     font-family: Inter-light;
 }
 
+main .container .wrapper .content form .form-group #passwordHelpBlock {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 main .container .wrapper .content form section.button-form p {
     color: red;
 }
