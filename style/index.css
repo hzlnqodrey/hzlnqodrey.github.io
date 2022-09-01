@@ -88,11 +88,11 @@ main .explanation ol li::marker {
 
 main .explanation ol li span {
     font-family: Inter-semi-bold;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 main .explanation ol li p {
     font-family: Inter-regular;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
