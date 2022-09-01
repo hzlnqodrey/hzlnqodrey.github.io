@@ -32,32 +32,32 @@
                 <div class="content mt-2">
                     <form action="">
                         <div class="form-group mt-2">
-                            <a href="#identitas"><h2 class="identitas">Identitas <span class="material-symbols-outlined">link</span></h2></a>
+                            <a href="#identitas"><h2 class="identitas">Identity <span class="material-symbols-outlined">link</span></h2></a>
                             <div class="form-group mt-3">
-                                <label for=''>Nama*</label>
-                                <input class="form-control" type='text' name='' id='' placeholder="Nama" required>
+                                <label for='name'>Name*</label>
+                                <input class="form-control" type='text' name='name' id='name' placeholder="Name" required>
                             </div>
                             <div class="form-group mt-2">
-                                <label for='email'>Surel*</label>
-                                <input class="form-control" type='text' name='email' id='email' placeholder="Surel" required>
+                                <label for='email'>Email*</label>
+                                <input class="form-control" type='text' name='email' id='email' placeholder="Email" required>
                             </div>
                         </div>
                         <div class="form-group mt-5">
-                            <a href="#keterangan"><h2>Keterangan <span class="material-symbols-outlined">link</span></h2></a>
+                            <a href="#keterangan"><h2>Information <span class="material-symbols-outlined">link</span></h2></a>
                             <div class="form-group mt-3">
-                                <label for='laporan'>Laporan*</label>
-                                <input class="form-control" type='text' name='laporan' id='laporan' placeholder="Laporan" required>
+                                <label for='report'>Report*</label>
+                                <input class="form-control" type='text' name='report' id='report' placeholder="report" required>
                             </div>
                             <div class="form-group mt-3">
-                                <label for="severity">Keparahan*</label>
+                                <label for="severity">Severity*</label>
                                 <div class="input-group mt-2">
-                                    <label class="input-group-text" for="inputGroupSelect01">Tingkat Keparahan</label>
+                                    <label class="input-group-text" for="inputGroupSelect01">Severity Level</label>
                                     <select class="form-select" id="inputGroupSelect01">
-                                      <option value="1">Perlu diperbaiki sesegera mungkin</option>
-                                      <option value="2">Parah</option>
-                                      <option value="3">Sedang</option>
-                                      <option value="4">Kecil</option>
-                                      <option value="5" selected>Saran</option>
+                                      <option value="1">Needs to be fixed as soon as possible</option>
+                                      <option value="2">Critical</option>
+                                      <option value="3">Moderate</option>
+                                      <option value="4">Small</option>
+                                      <option value="5" selected>Suggestion</option>
                                     </select>
                                 </div>
                             </div>
@@ -86,15 +86,15 @@
                                 </div>
                             </div>
                             <div class="form-group mt-4">
-                                <label for='laporan'>Lampirkan berkas, video, atau gambar <br><small>&nbsp; <sup>• Batas ukuran berkas: 1 MB</sup></small> <br> <small>&nbsp; <sup>• Maksimal hingga 1 berkas</sup></small></label>
+                                <label for='laporan'>Attach files, videos or images <br><small>&nbsp; <sup>• File size limit: 1 MB</sup></small> <br> <small>&nbsp; <sup>• Maximum up to 1 file</sup></small></label>
                                 <div class="form-group mt-2">
-                                    <label for="img">Pilih berkas:</label>
+                                    <label for="img">Choose File:</label>
                                     <input class="btn btn-warning" type="file" id="img" name="img" accept="image/*">
                                 </div>
                             </div>
                         </div>
                         <section class="button-form mt-5">
-                            <p>*Wajib Diisi</p>
+                            <p>*Required to fill</p>
                             <button class="btn btn-primary">Submit</button>
                         </section>
                     </form>
@@ -122,16 +122,20 @@
                             <p>✔️ Already Implemented</p>
                         </li>
                         <li><span>Keparahan</span>
+                            <p class="tipe-data">Data Type: <strong>String</strong></p>
                             <p>Pada field <strong>Keparahan</strong>, user akan memilih opsi <strong>Tingkat Keparahan</strong> berdasarkan nilai/value drop down list yang ada (Perlu diperbaiki sesegera mungkin, Parah, Sedang, Kecil, dan Saran). </p>
                             <p>Salah satu opsinya menjadi placeholder dari input field <strong>Tingkat Keparahan</strong></p>
                             <p>Label <strong>Tingkat Keparahan</strong> berada di sebelah kiri drop downnya (satu line)</p>
                             <p>Kirim valuenya ke Backend</p>
                         </li>
                         <li><span>Platform dan Lingkungan Perangkat</span>
+                            <p class="tipe-data">Data Type: <strong>String,</strong> except <strong>RAM. RAM is number/integer</strong></p>
                             <p>Pada field Platform dan Lingkungan Perangkat, ada 3 field bertipe Text yaitu <strong>Merek HP</strong>, <strong>RAM</strong>, dan <strong>Versi Android</strong></p>
                             <p>Kirim valuenya ke Backend</p>
                         </li>
                         <li><span>Lampirkan file, video, atau gambar (Optional, tidak wajib diisi oleh user)</span>
+                            <p class="tipe-data">Data Type: <strong>[An image, file, and video is typically a binary format file]</strong></p>
+                            <p class="tipe-data">Acceptable Format: <strong>.txt/.pdf/.JPG/.png/.mp4/.mov/</strong></p>
                             <p>Pada field Lampirkan file, video, atau gambar, user akan mengupload sebuah file (txt, pdf, video, atau gambar)</p>
                             <p>User akan dibatasi oleh <strong>Size Limit</strong> sebanyak <em>1 MB</em> dan <strong>Maximum File</strong> sebanyak <em>satu buah</em></p>
                             <p>Kirim valuenya ke Backend</p>

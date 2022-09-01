@@ -100,3 +100,6 @@ main .explanation ol li p {
     font-size: 1.2em;
 }
 
+main .explanation .tipe-data {
+    color: red;
+}
