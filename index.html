@@ -49,7 +49,7 @@
                                 <input class="form-control" type='text' name='laporan' id='laporan' placeholder="Laporan" required>
                             </div>
                             <div class="form-group mt-3">
-                                <label for="severity">Keparahan</label>
+                                <label for="severity">Keparahan*</label>
                                 <div class="input-group mt-2">
                                     <label class="input-group-text" for="inputGroupSelect01">Tingkat Keparahan</label>
                                     <select class="form-select" id="inputGroupSelect01">
@@ -62,10 +62,28 @@
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <label for='laporan'>Platform dan Lingkungan Perangkat</label>
-                                <input class="form-control mt-2" type='text' name='merek-hp' id='merek-hp' placeholder="Merek HP">
-                                <input class="form-control mt-2" type='text' name='ram' id='ram' placeholder="RAM">
-                                <input class="form-control mt-2" type='text' name='versi-android' id='versi-android' placeholder="Versi Android">
+                                <label for='platform'>Platform and Device Environment*</label>
+                                <div class="form-group row">
+                                    <label for="phone-brand" class="col-sm-3 col-form-label">Phone Brand:</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="phone-brand" placeholder="Phone Brand">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="RAM" class="col-sm-3 col-form-label">RAM:</label>
+                                    <div class="col-sm-7">
+                                      <input type="text" class="form-control" id="RAM" placeholder="RAM">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input type="text" class="form-control" id="RAM" placeholder="GB" readonly>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="android-version" class="col-sm-3 col-form-label">Android Version:</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="android-version" placeholder="Android Version">
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group mt-4">
                                 <label for='laporan'>Lampirkan berkas, video, atau gambar <br><small>&nbsp; <sup>• Batas ukuran berkas: 1 MB</sup></small> <br> <small>&nbsp; <sup>• Maksimal hingga 1 berkas</sup></small></label>
