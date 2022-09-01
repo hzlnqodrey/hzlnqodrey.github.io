@@ -68,9 +68,9 @@
                                 <input class="form-control mt-2" type='text' name='versi-android' id='versi-android' placeholder="Versi Android">
                             </div>
                             <div class="form-group mt-4">
-                                <label for='laporan'>Screenshoot</label>
+                                <label for='laporan'>Lampirkan berkas, video, atau gambar <br><small>&nbsp; <sup>• Batas ukuran berkas: 1 MB</sup></small> <br> <small>&nbsp; <sup>• Maksimal hingga 1 berkas</sup></small></label>
                                 <div class="form-group mt-2">
-                                    <label for="img">Pilih Gambar:</label>
+                                    <label for="img">Pilih berkas:</label>
                                     <input class="btn btn-warning" type="file" id="img" name="img" accept="image/*">
                                 </div>
                             </div>
@@ -103,14 +103,17 @@
                         <li><span>Laporan</span>
                             <p>Already Implemented</p>
                         </li>
-                        <li><span>Keparahan</span>
-                            <p>Pada field keparahan, user akan memilih opsi Tingkat Keparahan berdasarkan nilai drop down list yang ada (Perlu diperbaiki sesegera mungkin, Parah, Sedang, Kecil, dan Saran). </p>
-                            <p>Label Tingkat Keparahan berada di sebelah kiri drop downnya (satu line)</p>
+                        <li><span>Keparahan (Optional, tidak wajib diisi oleh user)</span>
+                            <p>Pada field <strong>Keparahan</strong>, user akan memilih opsi <strong>Tingkat Keparahan</strong> berdasarkan nilai/value drop down list yang ada (Perlu diperbaiki sesegera mungkin, Parah, Sedang, Kecil, dan Saran). </p>
+                            <p>Salah satu opsinya menjadi placeholder dari input field <strong>Tingkat Keparahan</strong></p>
+                            <p>Label <strong>Tingkat Keparahan</strong> berada di sebelah kiri drop downnya (satu line)</p>
+                            <p>Kirim valuenya ke Backend</p>
                         </li>
-                        <li><span>Platform dan Lingkungan Perangkat</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga!</p>
+                        <li><span>Platform dan Lingkungan Perangkat (Optional, tidak wajib diisi oleh user)</span>
+                            <p>Pada field Platform dan Lingkungan Perangkat, ada 3 field bertipe Text yaitu <strong>Merek HP</strong>, <strong>RAM</strong>, dan <strong>Versi Android</strong></p>
+                            <p>Kirim valuenya ke Backend</p>
                         </li>
-                        <li><span>Screenshoot</span>
+                        <li><span>Lampirkan file, video, atau gambar Batas Ukuran: 1MB (Optional, tidak wajib diisi oleh user)</span>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga!</p>
                         </li>
                     </ol>
