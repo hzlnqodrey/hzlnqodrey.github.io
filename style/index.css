@@ -78,6 +78,10 @@ main .container .wrapper .content form .form-group .row {
     margin-top: 2%;
 }
 
+main .container .wrapper .content form .form-group .not-bold {
+    font-family: Inter-light;
+}
+
 main .container .wrapper .content form section.button-form p {
     color: red;
 }
