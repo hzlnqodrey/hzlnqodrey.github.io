@@ -19,120 +19,122 @@
   <body>
 
     <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-2">
-                    <ul class="sidebar-nav">
-                        <p>Bug Report API</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp; Endpoint</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Report</p>
-                        <li>
-                            <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama</a>
-                        </li>
-                        <li>
-                            <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surel</a>
-                        </li>
-                        <li>
-                            <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Laporan</a>
-                        </li>
-                        <li>
-                            <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keparahan</a>
-                        </li>
-                        <li>
-                            <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Device Plat & Environment</a>
-                        </li>
-                        <li>
-                            <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unggah</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
         <div class="container mt-5 col-sm-10">
             <div class="wrapper">
-                <div class="title">
-                    <h1><center>Dokumentasi API Bug Report</center></h1>
-                    <p><center>for Bintang Putera</center></p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <ul class="sidebar-nav">
+                                <p>API</p>
+                                <p> &nbsp;&nbsp;Endpoint</p>
+                                <p> &nbsp;&nbsp;&nbsp;&nbsp;Report</p>
+                                <li>
+                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama</a>
+                                </li>
+                                <li>
+                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surel</a>
+                                </li>
+                                <li>
+                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Laporan</a>
+                                </li>
+                                <li>
+                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keparahan</a>
+                                </li>
+                                <li>
+                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perangkat</a>
+                                </li>
+                                <li>
+                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unggah</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="main-content">
+                        <div class="title">
+                            <h1><center>Dokumentasi API Bug Report</center></h1>
+                            <p><center>for Bintang Putera</center></p>
+                        </div>
         
-                <div class="section-title mt-5">
-                    <h2>Struktur Form Bug Report</h2>
-                </div>
-                <div class="content mt-2">
-                    <form action="">
-                        <div class="form-group mt-2">
-                            <a href="#identitas"><h2 class="identitas">Identity <span class="material-symbols-outlined">link</span></h2></a>
-                            <div class="form-group mt-3">
-                                <label for='name'>Nama*</label>
-                                <input class="form-control" type='text' name='name' id='name' placeholder="Example: Bintang Putera [autofill]" required readonly>
-                            </div>
-                            <div class="form-group mt-2">
-                                <label for='email'>Surel</label>
-                                <input class="form-control" type='text' name='email' id='email' placeholder="Example: bintang@thisable.com [autofill]" required readonly>
-                            </div>
+                        <div class="section-title mt-5">
+                            <h2>Struktur/UI Bug Report Form</h2>
                         </div>
-                        <div class="form-group mt-5">
-                            <a href="#keterangan"><h2>Keterangan <span class="material-symbols-outlined">link</span></h2></a>
-                            <div class="form-group mt-3">
-                                <label for='report'>Laporan*</label>
-                                <textarea class="form-control" name="report" id="report" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque officia amet ex reiciendis iure illo earum laborum recusandae, eius quibusdam provident quidem maiores natus nesciunt. Ipsam exercitationem, obcaecati enim molestiae at eveniet sapiente quod sit aspernatur repellat labore inventore, porro amet eum placeat harum et impedit consequatur nostrum repudiandae dolore! Atque aliquam repudiandae impedit neque in commodi maiores ipsam sit, error perferendis amet qui facere velit ab voluptate repellat laudantium molestias eaque quos sint officiis facilis architecto saepe. Est animi consequatur eligendi, asperiores excepturi, saepe voluptas vitae suscipit ipsam, fugit iusto quia praesentium dicta facilis sapiente esse consequuntur quam.</textarea>
-                                <small id="passwordHelpBlock" class="form-text text-muted">
-                                    0/255
-                                  </small>
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="severity">Keparahan*</label>
-                                <div class="input-group mt-2">
-                                    <label class="input-group-text" for="inputGroupSelect01">Tingkat Keparahan</label>
-                                    <select class="form-select" id="inputGroupSelect01">
-                                      <option value="1">Perlu diperbaiki sesegera mungkin</option>
-                                      <option value="2">Parah</option>
-                                      <option value="3">Sedang</option>
-                                      <option value="4">Kecil</option>
-                                      <option value="5" selected>Saran</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for='platform'>Platform dan Lingkungan Perangkat*</label>
-                                <div class="form-group row">
-                                    <label for="phone-brand" class="col-sm-3 col-form-label not-bold">Merek HP:</label>
-                                    <div class="col-sm-9">
-                                      <input type="text" class="form-control" id="phone-brand" placeholder="Phone Brand [autofill]" readonly>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="RAM" class="col-sm-3 col-form-label not-bold">RAM:</label>
-                                    <div class="col-sm-7">
-                                      <input type="text" class="form-control" id="RAM" placeholder="RAM [autofill]" onkeydown="return /^[0-9]+/i.test(event.key)" readonly>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="RAM" placeholder="GB" readonly>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="android-version" class="col-sm-3 col-form-label not-bold">Versi Android:</label>
-                                    <div class="col-sm-9">
-                                      <input type="text" class="form-control" id="android-version" placeholder="Android Version [autofill]" readonly>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group mt-4">
-                                <label for='laporan'>Lampirkan berkas, video, atau gambar <br><small>&nbsp; <sup>• Batas ukuran berkas: 1 MB</sup></small> <br> <small>&nbsp; <sup>• Maksimal hingga 1 berkas</sup></small></label>
+                        <div class="content mt-2">
+                            <form action="">
                                 <div class="form-group mt-2">
-                                    <label for="img" class="not-bold">Pilih berkas:</label>
-                                    <input class="btn btn-warning" type="file" id="img" name="img" accept="image/*">
+                                    <a href="#identitas"><h2 class="identitas">Identity <span class="material-symbols-outlined">link</span></h2></a>
+                                    <div class="form-group mt-3">
+                                        <label for='name'>Nama*</label>
+                                        <input class="form-control" type='text' name='name' id='name' placeholder="Example: Bintang Putera [autofill]" required readonly>
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for='email'>Surel</label>
+                                        <input class="form-control" type='text' name='email' id='email' placeholder="Example: bintang@thisable.com [autofill]" required readonly>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="form-group mt-5">
+                                    <a href="#keterangan"><h2>Keterangan <span class="material-symbols-outlined">link</span></h2></a>
+                                    <div class="form-group mt-3">
+                                        <label for='report'>Laporan*</label>
+                                        <textarea class="form-control" name="report" id="report" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque officia amet ex reiciendis iure illo earum laborum recusandae, eius quibusdam provident quidem maiores natus nesciunt. Ipsam exercitationem, obcaecati enim molestiae at eveniet sapiente quod sit aspernatur repellat labore inventore, porro amet eum placeat harum et impedit consequatur nostrum repudiandae dolore! Atque aliquam repudiandae impedit neque in commodi maiores ipsam sit, error perferendis amet qui facere velit ab voluptate repellat laudantium molestias eaque quos sint officiis facilis architecto saepe. Est animi consequatur eligendi, asperiores excepturi, saepe voluptas vitae suscipit ipsam, fugit iusto quia praesentium dicta facilis sapiente esse consequuntur quam.</textarea>
+                                        <small id="passwordHelpBlock" class="form-text text-muted">
+                                            0/255
+                                        </small>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="severity">Keparahan*</label>
+                                        <div class="input-group mt-2">
+                                            <label class="input-group-text" for="inputGroupSelect01">Tingkat Keparahan</label>
+                                            <select class="form-select" id="inputGroupSelect01">
+                                            <option value="1">Perlu diperbaiki sesegera mungkin</option>
+                                            <option value="2">Parah</option>
+                                            <option value="3">Sedang</option>
+                                            <option value="4">Kecil</option>
+                                            <option value="5" selected>Saran</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for='platform'>Platform dan Lingkungan Perangkat*</label>
+                                        <div class="form-group row">
+                                            <label for="phone-brand" class="col-sm-3 col-form-label not-bold">Merek HP:</label>
+                                            <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="phone-brand" placeholder="Phone Brand [autofill]" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="RAM" class="col-sm-3 col-form-label not-bold">RAM:</label>
+                                            <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="RAM" placeholder="RAM [autofill]" onkeydown="return /^[0-9]+/i.test(event.key)" readonly>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control" id="RAM" placeholder="GB" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="android-version" class="col-sm-3 col-form-label not-bold">Versi Android:</label>
+                                            <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="android-version" placeholder="Android Version [autofill]" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <label for='laporan'>Lampirkan berkas, video, atau gambar <br><small>&nbsp; <sup>• Batas ukuran berkas: 1 MB</sup></small> <br> <small>&nbsp; <sup>• Maksimal hingga 1 berkas</sup></small></label>
+                                        <div class="form-group mt-2">
+                                            <label for="img" class="not-bold">Pilih berkas:</label>
+                                            <input class="btn btn-warning" type="file" id="img" name="img" accept="image/*">
+                                        </div>
+                                    </div>
+                                </div>
+                                <section class="button-form mt-5">
+                                    <p>*Wajib diisi</p>
+                                    <button class="btn btn-primary">Kirim</button>
+                                </section>
+                            </form>
                         </div>
-                        <section class="button-form mt-5">
-                            <p>*Wajib diisi</p>
-                            <button class="btn btn-primary">Kirim</button>
-                        </section>
-                    </form>
+                    </div>
                 </div>
-            </div>
             <hr>
 
             <div class="explanation">

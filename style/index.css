@@ -43,18 +43,26 @@ a {
     color: #00B7FF;
 }
 
-.container-fluid .row {
-    border: 1px solid red;
+.container-fluid {
+    width: 30%;
+    height: 50vh;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 5%;
 }
 
 .sidebar-nav {
     font-family: Inter-light;
     margin-top: 20px;
-    padding: 0;
+    padding: 15px;
     list-style: none;
 
-    border: 1px solid red;
-  }
+    /* border: 1px solid red; */
+
+
+}
 
 .sidebar-nav p {
     font-family: Inter-bold;
@@ -76,11 +84,13 @@ main .container {
 }
 
 main .wrapper {
-    margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 main .container .wrapper .content {
@@ -98,6 +108,11 @@ a {
   'wght' 500,
   'GRAD' -25,
   'opsz' 40
+}
+
+main .container .wrapper .main-content {
+    width: 80%;
+    height: 150vh;
 }
 
 main .container .wrapper .content form label {
