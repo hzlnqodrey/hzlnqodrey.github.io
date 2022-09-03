@@ -64,71 +64,71 @@
                         <div class="form-group mt-2">
                             <a href="#identitas"><h2 class="identitas">Identity <span class="material-symbols-outlined">link</span></h2></a>
                             <div class="form-group mt-3">
-                                <label for='name'>Name*</label>
+                                <label for='name'>Nama*</label>
                                 <input class="form-control" type='text' name='name' id='name' placeholder="Example: Bintang Putera [autofill]" required readonly>
                             </div>
                             <div class="form-group mt-2">
-                                <label for='email'>Email</label>
+                                <label for='email'>Surel</label>
                                 <input class="form-control" type='text' name='email' id='email' placeholder="Example: bintang@thisable.com [autofill]" required readonly>
                             </div>
                         </div>
                         <div class="form-group mt-5">
-                            <a href="#keterangan"><h2>Information <span class="material-symbols-outlined">link</span></h2></a>
+                            <a href="#keterangan"><h2>Keterangan <span class="material-symbols-outlined">link</span></h2></a>
                             <div class="form-group mt-3">
-                                <label for='report'>Report*</label>
+                                <label for='report'>Laporan*</label>
                                 <textarea class="form-control" name="report" id="report" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque officia amet ex reiciendis iure illo earum laborum recusandae, eius quibusdam provident quidem maiores natus nesciunt. Ipsam exercitationem, obcaecati enim molestiae at eveniet sapiente quod sit aspernatur repellat labore inventore, porro amet eum placeat harum et impedit consequatur nostrum repudiandae dolore! Atque aliquam repudiandae impedit neque in commodi maiores ipsam sit, error perferendis amet qui facere velit ab voluptate repellat laudantium molestias eaque quos sint officiis facilis architecto saepe. Est animi consequatur eligendi, asperiores excepturi, saepe voluptas vitae suscipit ipsam, fugit iusto quia praesentium dicta facilis sapiente esse consequuntur quam.</textarea>
                                 <small id="passwordHelpBlock" class="form-text text-muted">
                                     0/255
                                   </small>
                             </div>
                             <div class="form-group mt-3">
-                                <label for="severity">Severity*</label>
+                                <label for="severity">Keparahan*</label>
                                 <div class="input-group mt-2">
-                                    <label class="input-group-text" for="inputGroupSelect01">Severity Level</label>
+                                    <label class="input-group-text" for="inputGroupSelect01">Tingkat Keparahan</label>
                                     <select class="form-select" id="inputGroupSelect01">
-                                      <option value="1">Needs to be fixed as soon as possible</option>
-                                      <option value="2">Critical</option>
-                                      <option value="3">Moderate</option>
-                                      <option value="4">Small</option>
-                                      <option value="5" selected>Suggestion</option>
+                                      <option value="1">Perlu diperbaiki sesegera mungkin</option>
+                                      <option value="2">Parah</option>
+                                      <option value="3">Sedang</option>
+                                      <option value="4">Kecil</option>
+                                      <option value="5" selected>Saran</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <label for='platform'>Platform and Device Environment*</label>
+                                <label for='platform'>Platform dan Lingkungan Perangkat*</label>
                                 <div class="form-group row">
-                                    <label for="phone-brand" class="col-sm-3 col-form-label not-bold">Phone Brand:</label>
+                                    <label for="phone-brand" class="col-sm-3 col-form-label not-bold">Merek HP:</label>
                                     <div class="col-sm-9">
-                                      <input type="text" class="form-control" id="phone-brand" placeholder="Phone Brand">
+                                      <input type="text" class="form-control" id="phone-brand" placeholder="Phone Brand [autofill]" readonly>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="RAM" class="col-sm-3 col-form-label not-bold">RAM:</label>
                                     <div class="col-sm-7">
-                                      <input type="text" class="form-control" id="RAM" placeholder="RAM" onkeydown="return /^[0-9]+/i.test(event.key)">
+                                      <input type="text" class="form-control" id="RAM" placeholder="RAM [autofill]" onkeydown="return /^[0-9]+/i.test(event.key)" readonly>
                                     </div>
                                     <div class="col-sm-2">
                                         <input type="text" class="form-control" id="RAM" placeholder="GB" readonly>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="android-version" class="col-sm-3 col-form-label not-bold">Android Version:</label>
+                                    <label for="android-version" class="col-sm-3 col-form-label not-bold">Versi Android:</label>
                                     <div class="col-sm-9">
-                                      <input type="text" class="form-control" id="android-version" placeholder="Android Version">
+                                      <input type="text" class="form-control" id="android-version" placeholder="Android Version [autofill]" readonly>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mt-4">
-                                <label for='laporan'>Attach files, videos or images <br><small>&nbsp; <sup class="not-bold">• File size limit: 1 MB</sup></small> <br> <small>&nbsp; <sup class="not-bold">• Maximum up to 1 file</sup></small></label>
+                                <label for='laporan'>Lampirkan berkas, video, atau gambar <br><small>&nbsp; <sup>• Batas ukuran berkas: 1 MB</sup></small> <br> <small>&nbsp; <sup>• Maksimal hingga 1 berkas</sup></small></label>
                                 <div class="form-group mt-2">
-                                    <label for="img" class="not-bold">Choose File:</label>
+                                    <label for="img" class="not-bold">Pilih berkas:</label>
                                     <input class="btn btn-warning" type="file" id="img" name="img" accept="image/*">
                                 </div>
                             </div>
                         </div>
                         <section class="button-form mt-5">
-                            <p>*Required to fill</p>
-                            <button class="btn btn-primary">Submit</button>
+                            <p>*Wajib diisi</p>
+                            <button class="btn btn-primary">Kirim</button>
                         </section>
                     </form>
                 </div>
@@ -164,9 +164,9 @@
                         <li><span>Platform and Device Environment</span>
                             <p class="tipe-data">Data Type: <strong>String,</strong> except <strong>RAM. RAM is number/integer</strong></p>
                             <p>Pada field Platform and Device Environment, ada 3 field bertipe Text yaitu <strong>Phone Brand</strong>, <strong>RAM</strong>, dan <strong>Android Version</strong></p>
-                            <p>Untuk <strong>RAM</strong> batasin user dari menulis <em>Aplhanumeric (e.g: a-z / A-Z)</em>, jadi hanya bisa fill <em> number (e.g: 0-9) </em></p>
+                            <p>Untuk <strong>RAM</strong> <strike>batasin user dari menulis <em>Aplhanumeric (e.g: a-z / A-Z)</em>, jadi hanya bisa fill <em> number (e.g: 0-9) </em></strike></p>
                             <p>&nbsp;&nbsp;&nbsp;   <small>Note: Coba tes ngisi aja fieldnya</small> </p>
-                            <p>&nbsp;&nbsp;&nbsp;   <small>Note 2: Cara batasinnya pake <strong>REGEX</strong> (syntaxnya: <strong> ^[0-9]+/i</strong>  )</small> </p>
+                            <p>&nbsp;&nbsp;&nbsp;   <small>Note 2: <strike>Cara batasinnya pake <strong>REGEX</strong> (syntaxnya: <strong> ^[0-9]+/i</strong>  )</small> </strike></p>
                             <p>Kirim valuenya ke Backend</p>
                         </li>
                         <li><span>Attach files, videos or images (Optional, tidak wajib diisi oleh user)</span>
