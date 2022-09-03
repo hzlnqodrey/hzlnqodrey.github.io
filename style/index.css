@@ -39,6 +39,36 @@ h6 {
     font-size: 9pt;
 }
 
+a {
+    color: #00B7FF;
+}
+
+.container-fluid .row {
+    border: 1px solid red;
+}
+
+.sidebar-nav {
+    font-family: Inter-light;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+
+    border: 1px solid red;
+  }
+
+.sidebar-nav p {
+    font-family: Inter-bold;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+}
+
+.sidebar-nav a:hover {
+    text-decoration: none;
+    color: #00B7FF;
+}
+
 main .container {
     width: 100%;
     height: auto;
