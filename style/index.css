@@ -184,7 +184,7 @@ main .explanation code {
     color: #e96900;
     margin: 0 2px;
     padding: 3px 5px;
-    white-space: pre-wrap;
+    white-space: normal;
 
     background-color: #f8f8f8;
 }
@@ -197,7 +197,7 @@ main .explanation pre>code {
     margin: 0px 5% 0px 0px;
     max-width: inherit;
     overflow: scroll;
-    white-space: pre-wrap;
+    white-space: pre;
 
     -webkit-font-smoothing: initial;
     
@@ -214,8 +214,9 @@ main .explanation pre::after {
     height: 15px;
     line-height: 15px;
     padding: 5px 10px 0;
-    position: absolute;
+    position: relative;
     right: 0;
+    bottom: 0;
+    top: -100px;
     text-align: right;
-    top: 0;
 }

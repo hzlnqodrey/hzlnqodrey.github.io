@@ -64,7 +64,7 @@
                         <div class="content mt-2">
                             <form action="">
                                 <div class="form-group mt-2">
-                                    <a href="#identitas"><h2 class="identitas">Identity <span class="material-symbols-outlined">link</span></h2></a>
+                                    <a href="#identitas"><h2 class="identitas">Identitas <span class="material-symbols-outlined">link</span></h2></a>
                                     <div class="form-group mt-3">
                                         <label for='name'>Nama*</label>
                                         <input class="form-control" type='text' name='name' id='name' placeholder="Example: Bintang Putera [autofill]" required readonly>
@@ -99,13 +99,13 @@
                                     <div class="form-group mt-3">
                                         <label for='platform'>Platform dan Lingkungan Perangkat*</label>
                                         <div class="form-group row">
-                                            <label for="phone-brand" class="col-sm-3 col-form-label not-bold">Merek HP:</label>
+                                            <label for="phone-brand" class="col-sm-3 col-form-label not-bold">Merek HP</label>
                                             <div class="col-sm-9">
                                             <input type="text" class="form-control" id="phone-brand" placeholder="Phone Brand [autofill]" readonly>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="RAM" class="col-sm-3 col-form-label not-bold">RAM:</label>
+                                            <label for="RAM" class="col-sm-3 col-form-label not-bold">RAM</label>
                                             <div class="col-sm-7">
                                             <input type="text" class="form-control" id="RAM" placeholder="RAM [autofill]" onkeydown="return /^[0-9]+/i.test(event.key)" readonly>
                                             </div>
@@ -114,7 +114,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="android-version" class="col-sm-3 col-form-label not-bold">Versi Android:</label>
+                                            <label for="android-version" class="col-sm-3 col-form-label not-bold">Versi Android</label>
                                             <div class="col-sm-9">
                                             <input type="text" class="form-control" id="android-version" placeholder="Android Version [autofill]" readonly>
                                             </div>
@@ -396,10 +396,10 @@
                                 <li>Description
                                     <div class="description">
                                         <p class="tipe-data">Data Type: <strong>String,</strong> except <strong>RAM. RAM is number/integer</strong></p>
-                            <p>Pada field Platform dan Lingkungan Perangkat, ada 3 field bertipe Text yaitu <strong>Phone Brand</strong>, <strong>RAM</strong>, dan <strong>Android Version</strong></p>
-                            <p>Untuk <strong>RAM</strong> <strike>batasin user dari menulis <em>Aplhanumeric (e.g: a-z / A-Z)</em>, jadi hanya bisa fill <em> number (e.g: 0-9) </em> </strike> Tidak Perlu karena sudah <strong>AUTOFILL</strong></p>
-                            <p>&nbsp;&nbsp;&nbsp;   <small>Note:  <strike>Coba tes ngisi aja fieldnya</small> </strike></p>
-                            <p>&nbsp;&nbsp;&nbsp;   <small>Note 2: <strike>Cara batasinnya pake <strong>REGEX</strong> (syntaxnya: <strong> ^[0-9]+/i</strong>  )</small> </strike></p>
+                                        <p>Pada field Platform dan Lingkungan Perangkat, ada 3 field bertipe Text yaitu <strong>Phone Brand</strong>, <strong>RAM</strong>, dan <strong>Android Version</strong></p>
+                                        <p>Untuk <strong>RAM</strong> <strike>batasin user dari menulis <em>Aplhanumeric (e.g: a-z / A-Z)</em>, jadi hanya bisa fill <em> number (e.g: 0-9) </em> </strike> Tidak Perlu karena sudah <strong>AUTOFILL</strong></p>
+                                        <p>&nbsp;&nbsp;&nbsp;   <small>Note:  <strike>Coba tes ngisi aja fieldnya</small> </strike></p>
+                                        <p>&nbsp;&nbsp;&nbsp;   <small>Note 2: <strike>Cara batasinnya pake <strong>REGEX</strong> (syntaxnya: <strong> ^[0-9]+/i</strong>  )</small> </strike></p>
                                     </div>
                                 </li>
 
@@ -431,7 +431,11 @@
                                 <li>Request Body
                                     <div class="request">
                                         <ul style="list-style-type:disc">
-                                            <li><code>severity</code> as <code>string</code></li>
+                                            <li><code>phone_brand</code> as <code>string</code></li>
+                                            <li><code>ram</code> as <code>number or integer</code></li>
+                                            <li><code>android_version</code> as <code>string</code><br>
+                                                <small>Note: Untuk <code>android_version</code> Karena nantinya ini bakal Autofill dari androidnya dan ketika aku lihat di sini (<a href="https://apilevels.com/">https://apilevels.com/</a>) itu ada banyak data dan column, jadi kita hanya kirim yang "Version" column sebagai string ke database aja</small>
+                                            </li>
                                         </ul>
                                     </div>
                                 </li>
@@ -457,11 +461,69 @@
                         </li>
                         </li>
                         <li><span id="doc_unggah">Lampirkan berkas, video, atau gambar (Optional, tidak wajib diisi oleh user)</span>
-                            <p class="tipe-data">Data Type: <strong>[An image, file, and video is typically a binary format file]</strong></p>
-                            <p class="tipe-data">Acceptable Format: <strong>.txt/.pdf/.JPG/.png/.mp4/.mov/</strong></p>
-                            <p>Pada field Lampirkan berkas, video, atau gambar, user akan mengupload sebuah file (txt, pdf, video, atau gambar)</p>
-                            <p>User akan dibatasi oleh <strong>Size Limit</strong> sebanyak <em>1 MB</em> dan <strong>Maximum File</strong> sebanyak <em>satu buah</em></p>
-                            <p>Kirim valuenya ke Backend</p>
+                            <ul>
+                                <li>Description
+                                    <div class="description">
+                                        <p class="tipe-data">Data Type: <strong>An image, file, and video are typically in a binary format</strong></p>
+                                        <p class="tipe-data">Acceptable Format: <strong>.txt/.pdf/.JPG/.png/.mp4/.mov/</strong> | Read Here <a href="https://cloud.google.com/dlp/docs/supported-file-types">https://cloud.google.com/dlp/docs/supported-file-types</a></p>
+                                        <p>Pada field Lampirkan berkas, video, atau gambar, user akan mengupload sebuah file (txt, pdf, video, atau gambar)</p>
+                                        <p>User akan dibatasi oleh <strong>Size Limit</strong> sebanyak <strong><em>1 MB</em></strong> dan <strong>Maximum File</strong> sebanyak <strong><em>satu buah</em></strong></p>
+                                    </div>
+                                </li>
+
+                                <li>URL
+                                    <div class="url">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>/report</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Method
+                                    <div class="method">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>POST</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Headers
+                                    <div class="headers">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>Content-Type</code> : <code>multipart/form-data</code></li>
+                                            <li><code>Authorization</code> : <code>Bearer &lt;token&gt;</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                
+                                <li>Request Body
+                                    <div class="request">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>photo</code> as <code>file</code><br>
+                                                <small>must be a valid image file, max size <strong>1 MB</strong></small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Response
+                                    <div class="response">
+                                        <pre v-pre data-lang="json">
+                                            <code class="lang-json">
+                                                {
+                                                    "status": "success",
+                                                    "error": false,
+                                                    "message": "Report is successfully added to Firestore",
+                                                    "date": "04-09-2022  07:49:49",
+                                                    "data": {
+                                                        "reportId": "auJtkpoCbuljkxis"
+                                                    }
+                                                }
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </ol>
                 </div>
