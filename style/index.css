@@ -141,6 +141,14 @@ main .explanation {
     padding: 5%;
 }
 
+main .explanation ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    border: 0.1px dashed black;
+}
+
 main .explanation ol li::marker {
     font-size: 1.5em;
 }
@@ -157,4 +165,18 @@ main .explanation ol li p {
 
 main .explanation .tipe-data {
     color: red;
+}
+
+main .explanation .description p {
+    font-size: 0.9em;
+}
+
+main .explanation code {
+    border-radius: 2px;
+    color: #e96900;
+    margin: 0 2px;
+    padding: 3px 5px;
+    white-space: pre-wrap;
+
+    background-color: #f8f8f8;
 }
