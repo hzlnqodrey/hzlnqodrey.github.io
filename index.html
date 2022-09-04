@@ -167,6 +167,15 @@
                                     </div>
                                 </li>
 
+                                <li>Headers
+                                    <div class="headers">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>Content-Type</code> : <code>multipart/form-data</code></li>
+                                            <li><code>Authorization</code> : <code>Bearer &lt;token&gt;</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
                                 <li>Request Body
                                     <div class="request">
                                         <ul style="list-style-type:disc">
@@ -218,6 +227,15 @@
                                     </div>
                                 </li>
 
+                                <li>Headers
+                                    <div class="headers">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>Content-Type</code> : <code>multipart/form-data</code></li>
+                                            <li><code>Authorization</code> : <code>Bearer &lt;token&gt;</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
                                 <li>Request Body
                                     <div class="request">
                                         <ul style="list-style-type:disc">
@@ -251,22 +269,192 @@
                     <h2>Keterangan</h2>
                     <ol type="1">
                         <li><span id="doc_laporan">Laporan</span>
-                            <p>✔️ Already Implemented</p>
+                            <ul>
+                                <li>Description
+                                    <div class="description">
+                                        <p>✔️ Already Implemented</p>
+                                    </div>
+                                </li>
+
+                                <li>URL
+                                    <div class="url">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>/report</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Method
+                                    <div class="method">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>POST</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Headers
+                                    <div class="headers">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>Content-Type</code> : <code>multipart/form-data</code></li>
+                                            <li><code>Authorization</code> : <code>Bearer &lt;token&gt;</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Request Body
+                                    <div class="request">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>message</code> as <code>string</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Response
+                                    <div class="response">
+                                        <pre v-pre data-lang="json">
+                                            <code class="lang-json">
+                                                {
+                                                    "status": "success",
+                                                    "error": false,
+                                                    "message": "Report is successfully added to Firestore",
+                                                    "date": "04-09-2022  07:49:49",
+                                                    "data": {
+                                                        "reportId": "auJtkpoCbuljkxis"
+                                                    }
+                                                }
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                         <li><span id="doc_keparahan">Keparahan</span>
-                            <p class="tipe-data">Data Type: <strong>String</strong></p>
-                            <p>Pada field <strong>Keparahan</strong>, user akan memilih opsi <strong>Tingkat Keparahan</strong> berdasarkan nilai/value drop down list yang ada (Perlu diperbaiki sesegera mungkin, Parah, Sedang, Kecil, dan Saran). </p>
-                            <p>Salah satu opsinya menjadi placeholder dari input field <strong>Tingkat Keparahan</strong></p>
-                            <p>Label <strong>Tingkat Keparahan</strong> berada di sebelah kiri drop downnya (satu line)</p>
-                            <p>Kirim valuenya ke Backend</p>
+                            <ul>
+                                <li>Description
+                                    <div class="description">
+                                        <p class="tipe-data">Data Type: <strong>String</strong></p>
+                                        <p>Pada field <strong>Keparahan</strong>, user akan memilih opsi <strong>Tingkat Keparahan</strong> berdasarkan nilai/value drop down list yang ada (Perlu diperbaiki sesegera mungkin, Parah, Sedang, Kecil, dan Saran). </p>
+                                        <p>Salah satu opsinya menjadi placeholder dari input field <strong>Tingkat Keparahan</strong></p>
+                                        <p>Label <strong>Tingkat Keparahan</strong> berada di sebelah kiri drop downnya (satu line)</p>
+                                    </div>
+                                </li>
+
+                                <li>URL
+                                    <div class="url">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>/report</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Method
+                                    <div class="method">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>POST</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Headers
+                                    <div class="headers">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>Content-Type</code> : <code>multipart/form-data</code></li>
+                                            <li><code>Authorization</code> : <code>Bearer &lt;token&gt;</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Request Body
+                                    <div class="request">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>severity</code> as <code>string</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Response
+                                    <div class="response">
+                                        <pre v-pre data-lang="json">
+                                            <code class="lang-json">
+                                                {
+                                                    "status": "success",
+                                                    "error": false,
+                                                    "message": "Report is successfully added to Firestore",
+                                                    "date": "04-09-2022  07:49:49",
+                                                    "data": {
+                                                        "reportId": "auJtkpoCbuljkxis"
+                                                    }
+                                                }
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                         <li><span id="doc_perangkat">Platform dan Lingkungan Perangkat</span>
-                            <p class="tipe-data">Data Type: <strong>String,</strong> except <strong>RAM. RAM is number/integer</strong></p>
+                            <ul>
+                                <li>Description
+                                    <div class="description">
+                                        <p class="tipe-data">Data Type: <strong>String,</strong> except <strong>RAM. RAM is number/integer</strong></p>
                             <p>Pada field Platform dan Lingkungan Perangkat, ada 3 field bertipe Text yaitu <strong>Phone Brand</strong>, <strong>RAM</strong>, dan <strong>Android Version</strong></p>
-                            <p>Untuk <strong>RAM</strong> <strike>batasin user dari menulis <em>Aplhanumeric (e.g: a-z / A-Z)</em>, jadi hanya bisa fill <em> number (e.g: 0-9) </em></strike></p>
-                            <p>&nbsp;&nbsp;&nbsp;   <small>Note: Coba tes ngisi aja fieldnya</small> </p>
+                            <p>Untuk <strong>RAM</strong> <strike>batasin user dari menulis <em>Aplhanumeric (e.g: a-z / A-Z)</em>, jadi hanya bisa fill <em> number (e.g: 0-9) </em> </strike> Tidak Perlu karena sudah <strong>AUTOFILL</strong></p>
+                            <p>&nbsp;&nbsp;&nbsp;   <small>Note:  <strike>Coba tes ngisi aja fieldnya</small> </strike></p>
                             <p>&nbsp;&nbsp;&nbsp;   <small>Note 2: <strike>Cara batasinnya pake <strong>REGEX</strong> (syntaxnya: <strong> ^[0-9]+/i</strong>  )</small> </strike></p>
-                            <p>Kirim valuenya ke Backend</p>
+                                    </div>
+                                </li>
+
+                                <li>URL
+                                    <div class="url">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>/report</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Method
+                                    <div class="method">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>POST</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Headers
+                                    <div class="headers">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>Content-Type</code> : <code>multipart/form-data</code></li>
+                                            <li><code>Authorization</code> : <code>Bearer &lt;token&gt;</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                
+                                <li>Request Body
+                                    <div class="request">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>severity</code> as <code>string</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Response
+                                    <div class="response">
+                                        <pre v-pre data-lang="json">
+                                            <code class="lang-json">
+                                                {
+                                                    "status": "success",
+                                                    "error": false,
+                                                    "message": "Report is successfully added to Firestore",
+                                                    "date": "04-09-2022  07:49:49",
+                                                    "data": {
+                                                        "reportId": "auJtkpoCbuljkxis"
+                                                    }
+                                                }
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
                         </li>
                         <li><span id="doc_unggah">Lampirkan berkas, video, atau gambar (Optional, tidak wajib diisi oleh user)</span>
                             <p class="tipe-data">Data Type: <strong>[An image, file, and video is typically a binary format file]</strong></p>
