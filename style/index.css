@@ -205,3 +205,18 @@ main .explanation pre>code {
     border-radius: 2px;
     display: block;
 }
+
+main .explanation pre::after {
+    content: attr(data-lang);
+
+    color: #ccc;
+    font-size: .6rem;
+    font-weight: 600;
+    height: 15px;
+    line-height: 15px;
+    padding: 5px 10px 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
