@@ -146,7 +146,6 @@ main .explanation ol {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: stretch;
-    border: 0.1px dashed black;
 }
 
 main .explanation ol li::marker {

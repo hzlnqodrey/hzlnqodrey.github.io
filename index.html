@@ -195,7 +195,55 @@
                             </ul>
                         </li>
                         <li><span id="doc_email">Email</span>
-                            <p>✔️ Already Implemented</p>
+                            <ul>
+                                <li>Description
+                                    <div class="description">
+                                        <p>✔️ Already Implemented</p>
+                                    </div>
+                                </li>
+
+                                <li>URL
+                                    <div class="url">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>/report</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Method
+                                    <div class="method">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>POST</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Request Body
+                                    <div class="request">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>email</code> as <code>string</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Response
+                                    <div class="response">
+                                        <pre v-pre data-lang="json">
+                                            <code class="lang-json">
+                                                {
+                                                    "status": "success",
+                                                    "error": false,
+                                                    "message": "Report is successfully added to Firestore",
+                                                    "date": "04-09-2022  07:49:49",
+                                                    "data": {
+                                                        "reportId": "auJtkpoCbuljkxis"
+                                                    }
+                                                }
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </ol>
                 </div>
