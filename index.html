@@ -27,24 +27,24 @@
                             <ul class="sidebar-nav">
                                 <p>API</p>
                                 <p> &nbsp;&nbsp;Endpoint</p>
-                                <p> &nbsp;&nbsp;&nbsp;&nbsp;Report</p>
+                                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Report</p>
                                 <li>
-                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama</a>
+                                    <a href="#doc_nama">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama</a>
                                 </li>
                                 <li>
-                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surel</a>
+                                    <a href="#doc_email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surel</a>
                                 </li>
                                 <li>
-                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Laporan</a>
+                                    <a href="#doc_laporan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Laporan</a>
                                 </li>
                                 <li>
-                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keparahan</a>
+                                    <a href="#doc_keparahan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keparahan</a>
                                 </li>
                                 <li>
-                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perangkat</a>
+                                    <a href="#doc_perangkat">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perangkat</a>
                                 </li>
                                 <li>
-                                    <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unggah</a>
+                                    <a href="#doc_unggah">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unggah</a>
                                 </li>
                             </ul>
                         </div>
@@ -142,10 +142,10 @@
                 <div class="explanation-identitas mt-5" id="identitas">
                     <h2>Identity</h2>
                     <ol type="1">
-                        <li><span>Name</span>
+                        <li><span id="doc_nama">Nama</span>
                             <p>✔️ Already Implemented</p>
                         </li>
-                        <li><span>Email</span>
+                        <li><span id="doc_email">Email</span>
                             <p>✔️ Already Implemented</p>
                         </li>
                     </ol>
@@ -153,28 +153,28 @@
                 <div class="explanation-keterangan mt-5" id="keterangan">
                     <h2>Information</h2>
                     <ol type="1">
-                        <li><span>Report</span>
+                        <li><span id="doc_laporan">Laporan</span>
                             <p>✔️ Already Implemented</p>
                         </li>
-                        <li><span>Severity</span>
+                        <li><span id="doc_keparahan">Keparahan</span>
                             <p class="tipe-data">Data Type: <strong>String</strong></p>
-                            <p>Pada field <strong>Severity</strong>, user akan memilih opsi <strong>Severity Level</strong> berdasarkan nilai/value drop down list yang ada (Perlu diperbaiki sesegera mungkin, Parah, Sedang, Kecil, dan Saran). </p>
-                            <p>Salah satu opsinya menjadi placeholder dari input field <strong>Severity Level</strong></p>
-                            <p>Label <strong>Severity Level</strong> berada di sebelah kiri drop downnya (satu line)</p>
+                            <p>Pada field <strong>Keparahan</strong>, user akan memilih opsi <strong>Tingkat Keparahan</strong> berdasarkan nilai/value drop down list yang ada (Perlu diperbaiki sesegera mungkin, Parah, Sedang, Kecil, dan Saran). </p>
+                            <p>Salah satu opsinya menjadi placeholder dari input field <strong>Tingkat Keparahan</strong></p>
+                            <p>Label <strong>Tingkat Keparahan</strong> berada di sebelah kiri drop downnya (satu line)</p>
                             <p>Kirim valuenya ke Backend</p>
                         </li>
-                        <li><span>Platform and Device Environment</span>
+                        <li><span id="doc_perangkat">Platform dan Lingkungan Perangkat</span>
                             <p class="tipe-data">Data Type: <strong>String,</strong> except <strong>RAM. RAM is number/integer</strong></p>
-                            <p>Pada field Platform and Device Environment, ada 3 field bertipe Text yaitu <strong>Phone Brand</strong>, <strong>RAM</strong>, dan <strong>Android Version</strong></p>
+                            <p>Pada field Platform dan Lingkungan Perangkat, ada 3 field bertipe Text yaitu <strong>Phone Brand</strong>, <strong>RAM</strong>, dan <strong>Android Version</strong></p>
                             <p>Untuk <strong>RAM</strong> <strike>batasin user dari menulis <em>Aplhanumeric (e.g: a-z / A-Z)</em>, jadi hanya bisa fill <em> number (e.g: 0-9) </em></strike></p>
                             <p>&nbsp;&nbsp;&nbsp;   <small>Note: Coba tes ngisi aja fieldnya</small> </p>
                             <p>&nbsp;&nbsp;&nbsp;   <small>Note 2: <strike>Cara batasinnya pake <strong>REGEX</strong> (syntaxnya: <strong> ^[0-9]+/i</strong>  )</small> </strike></p>
                             <p>Kirim valuenya ke Backend</p>
                         </li>
-                        <li><span>Attach files, videos or images (Optional, tidak wajib diisi oleh user)</span>
+                        <li><span id="doc_unggah">Lampirkan berkas, video, atau gambar (Optional, tidak wajib diisi oleh user)</span>
                             <p class="tipe-data">Data Type: <strong>[An image, file, and video is typically a binary format file]</strong></p>
                             <p class="tipe-data">Acceptable Format: <strong>.txt/.pdf/.JPG/.png/.mp4/.mov/</strong></p>
-                            <p>Pada field Attach files, videos or images, user akan mengupload sebuah file (txt, pdf, video, atau gambar)</p>
+                            <p>Pada field Lampirkan berkas, video, atau gambar, user akan mengupload sebuah file (txt, pdf, video, atau gambar)</p>
                             <p>User akan dibatasi oleh <strong>Size Limit</strong> sebanyak <em>1 MB</em> dan <strong>Maximum File</strong> sebanyak <em>satu buah</em></p>
                             <p>Kirim valuenya ke Backend</p>
                         </li>
