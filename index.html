@@ -140,6 +140,88 @@
 
             <div class="explanation">
                 <h1><center>Dokumentasi</center></h1>
+                <div class="explanation-getreport mt-5" id="getreport">
+                    <h2>GET All Reports</h2>
+                    <ol type="1">
+                        <ul>
+                                <li>Description
+                                    <div class="description">
+                                        <p>Tinggal Ganti HTTP Method ke <code>GET</code></p>
+                                    </div>
+                                </li>
+
+                                <li>URL
+                                    <div class="url">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>/report</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Parameters & Query
+                                    <div class="url">
+                                        <ul style="list-style-type:disc">
+                                            <li>Key:<code>token</code> | Value:<code>&lt;secret-token&gt;</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Method
+                                    <div class="method">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>GET</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Headers
+                                    <div class="headers">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>Authorization</code> : <code>Bearer &lt;token&gt;</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Response
+                                    <div class="response">
+                                        <pre v-pre data-lang="json">
+                                            <code class="lang-json">
+                                                {
+                                                    "status": "success",
+                                                    "error": false,
+                                                    "data": {
+                                                        "getDataFromFirestore": [
+                                                            {
+                                                                "message": "Aku menemukan error di fitur login",
+                                                                "severity": "Saran",
+                                                                "name": "Gilang Martadinata",
+                                                                "ID_DocumentReport": "8uRommr1PaJTEDR_",
+                                                                "email": "geemde@gmail.com",
+                                                                "createdAt": "02-09-2022  16:28:31",
+                                                                "statusBug": "Opened",
+                                                                "key": "8uRommr1PaJTEDR_"
+                                                            },
+                                                            {
+                                                                "name": "Hazlan Muhammad Qodri",
+                                                                "createdAt": "02-09-2022  16:28:00",
+                                                                "email": "hzlnqodrey@gmail.com",
+                                                                "message": "saya menemukan error di fitur penerjemah bahasa isyarat",
+                                                                "ID_DocumentReport": "lpaXT3gVAeqFgvVt",
+                                                                "severity": "Saran",
+                                                                "statusBug": "Assigned",
+                                                                "key": "lpaXT3gVAeqFgvVt"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
                 <div class="explanation-identitas mt-5" id="identitas">
                     <h2>Identitas</h2>
                     <ol type="1">
@@ -500,7 +582,13 @@
                                     <div class="request">
                                         <ul style="list-style-type:disc">
                                             <li><code>photo</code> as <code>file</code><br>
-                                                <small>must be a valid image file, max size <strong>1 MB</strong></small>
+                                                <small>must be a valid image file (gif, jpg, jpeg, jpe, png), max size <strong>1 MB</strong></small>
+                                            </li>
+                                            <li><code>video</code> as <code>file</code><br>
+                                                <small>must be a valid video file (.gif, .webm, .mkv, .avi, .mov, .mp4), max size <strong>1 MB</strong></small>
+                                            </li>
+                                            <li><code>files</code> as <code>file</code><br>
+                                                <small>must be a valid file format (.pdf, .txt, .csv), max size <strong>1 MB</strong></small>
                                             </li>
                                         </ul>
                                     </div>

@@ -196,7 +196,7 @@ main .explanation pre>code {
     line-height: 1.8em;
     margin: 0px 5% 0px 0px;
     max-width: inherit;
-    overflow: scroll;
+    overflow: inherit;
     white-space: pre;
 
     -webkit-font-smoothing: initial;
