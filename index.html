@@ -144,28 +144,51 @@
                     <ol type="1">
                         <li><span id="doc_nama">Nama</span>
                             <ul>
-                                <li>
+                                <li>Description
                                     <div class="description">
-                                        <h4>Description</h4>
                                         <p>✔️ Already Implemented</p>
                                     </div>
                                 </li>
 
-                                <li>
+                                <li>URL
                                     <div class="url">
-                                        <h4>URL</h4>
                                         <ul style="list-style-type:disc">
                                             <li><code>/report</code></li>
                                         </ul>
                                     </div>
                                 </li>
 
-                                <li>
-                                    <div class="url">
-                                        <h4>Method</h4>
+                                <li>Method
+                                    <div class="method">
                                         <ul style="list-style-type:disc">
                                             <li><code>POST</code></li>
                                         </ul>
+                                    </div>
+                                </li>
+
+                                <li>Request Body
+                                    <div class="request">
+                                        <ul style="list-style-type:disc">
+                                            <li><code>name</code> as <code>string</code></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>Response
+                                    <div class="response">
+                                        <pre v-pre data-lang="json">
+                                            <code class="lang-json">
+                                                {
+                                                    "status": "success",
+                                                    "error": false,
+                                                    "message": "Report is successfully added to Firestore",
+                                                    "date": "04-09-2022  07:49:49",
+                                                    "data": {
+                                                        "reportId": "auJtkpoCbuljkxis"
+                                                    }
+                                                }
+                                            </code>
+                                        </pre>
                                     </div>
                                 </li>
                             </ul>

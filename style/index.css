@@ -144,23 +144,27 @@ main .explanation {
 main .explanation ol {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: stretch;
     border: 0.1px dashed black;
 }
 
 main .explanation ol li::marker {
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+main .explanation ul li::marker {
+    font-size: 0.9em;
 }
 
 main .explanation ol li {
-    line-height: 3.2em;
+    line-height: 2.3em;
 }
 
 
 main .explanation ol li span {
     font-family: Inter-semi-bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 main .explanation ol li p {
@@ -184,4 +188,20 @@ main .explanation code {
     white-space: pre-wrap;
 
     background-color: #f8f8f8;
+}
+
+main .explanation pre>code {
+    color: #525252;
+    font-size: .8rem;
+    padding: 1em 5px;
+    line-height: 1.8em;
+    margin: 0px 5% 0px 0px;
+    max-width: inherit;
+    overflow: scroll;
+    white-space: pre-wrap;
+
+    -webkit-font-smoothing: initial;
+    
+    border-radius: 2px;
+    display: block;
 }
